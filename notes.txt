@@ -1,11 +1,16 @@
+edit->stage->commit->track        git lifecycle
+
+
 //git basics commands
+
 git init
-git status               -s flag for summary      *.py  for same time of files
-git add
+git status               -s flag for summary      
+git add                   *.py  for same time of files
 git commit -m ""
 git commit -am ""            --stage and commit at one time only if git already tracks 
 git restore --staged ""           -unstage file
 ///////////////////
+
 
 //configuration
 
