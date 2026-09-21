@@ -1,4 +1,4 @@
-edit->stage->commit->track        git lifecycle
+edit->stage->commit->review        git lifecycle
 
 
 //git basics commands
@@ -22,14 +22,21 @@ git config --global user.name ""      -sets for all repos
 git config --list             -lists all configuration
 //////////////////////
 
-git restore "file_name"     -restore file changes
+git restore file_name     -restore file changes 
+git reset --soft HEAD~1     -undo last commit keep file changes
+
 
 git log            --oneline / --oneline -5 / --oneline --graph --all its a graph view
+                  --since="1 day ago" / --file_name specific file /--author="name"
 
 ***
 //.env       is an environment variable file with key=value pairs for sensitive data user=proto 
 //.gitignore is a file where we can write file name to ignore for tracking and
              folderName/ for a folder to ignore folderName/file_name for specific file
+             *.py specific type
+             !important.log  not important
 ***
 
 //git doesn't track empty folder for tracking put .gitkeep file in it
+
+git rm --cached filename      #remove already tracked file from tracking if forget to add in .gitgnore
