@@ -40,3 +40,10 @@ git log            --oneline / --oneline -5 / --oneline --graph --all its a grap
 //git doesn't track empty folder for tracking put .gitkeep file in it
 
 git rm --cached filename      #remove already tracked file from tracking if forget to add in .gitgnore
+
+git branch name
+git branch -m new_name
+git switch name 
+git switch -c name    --create and switch 
+git branch -d name     --delete 
+git merge name      to merge 
