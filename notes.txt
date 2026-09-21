@@ -22,7 +22,10 @@ git config --global user.name ""      -sets for all repos
 git config --list             -lists all configuration
 //////////////////////
 
-
 git restore "file_name"     -restore file changes
 
 git log            --oneline / --oneline -5 / --oneline --graph --all its a graph view
+
+//.env       is an environment file with key=value pairs for sensitive data user=proto 
+//.gitignore is a file where we can write file name to ignore for tracking and
+             folderName/ for a folder to ignore folderName/file_name for specific file
