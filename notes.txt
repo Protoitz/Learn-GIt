@@ -41,9 +41,14 @@ git log            --oneline / --oneline -5 / --oneline --graph --all its a grap
 
 git rm --cached filename      #remove already tracked file from tracking if forget to add in .gitgnore
 
+
+
+//branching is nothing but pointers to commit 
 git branch name
 git branch -m new_name
 git switch name 
 git switch -c name    --create and switch 
 git branch -d name     --delete 
 git merge name      to merge 
+git branch -a      --see local and remote 
+git push origin --delete name   --delete remote branch 
