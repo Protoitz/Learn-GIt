@@ -1,0 +1,23 @@
+//git basics commands
+git init
+git status               -s flag for summary      *.py  for same time of files
+git add
+git commit -m ""
+git commit -am ""            --stage and commit at one time only if git already tracks 
+git restore --staged ""           -unstage file
+///////////////////
+
+//configuration
+
+git config user.name ""          -sets local 
+git config user.email ""
+
+git config --global user.name ""      -sets for all repos 
+
+git config --list             -lists all configuration
+//////////////////////
+
+
+git restore "file_name"     -restore file changes
+
+git log            --oneline / --oneline -5 / --oneline --graph --all its a graph view
