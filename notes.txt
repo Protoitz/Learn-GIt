@@ -90,8 +90,21 @@ git diff file_name
 ****To push your repo first on git create a github account and a repo copy the link and then 
 git remote add origin url 
  
+git remote add origin <url>
+git remote set-url origin <url>       --to change 
+git remote remove origin 
+git remote rename origin upstream
+
 **then write 
 git push -u origin main 
+
 after then u can only write 
 git push                               --to push your repo
 
+
+//Restore commits
+git reset --soft <commit_id> HEAD~1                 ;undo last commit and stage
+git reset --hard <commit_id> or HEAD                ;discard the last commit 
+
+Insted use 
+git revert <commit_id> or HEAD
