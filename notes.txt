@@ -52,3 +52,11 @@ git branch -d name     --delete
 git merge name      to merge 
 git branch -a      --see local and remote 
 git push origin --delete name   --delete remote branch 
+
+
+
+///stash temp stores works making working tree clean for new commits
+git stash 
+git stash push -m "wip on search feature"    ---stash with a message
+git stash list   
+git stash pop
