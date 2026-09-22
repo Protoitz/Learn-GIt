@@ -76,3 +76,22 @@ git tag -a tag_name -m "message" commit_id          -annotated
 git tag tag_name commit id                          -specific light weight 
 git tag -d tag_name                         -delete a tag
 git push origin --delete tag_name               -remote 
+
+
+
+
+// diff                     check diff bw staged and working directory
+git diff 
+get diff --staged 
+git diff file_name
+
+
+
+****To push your repo first on git create a github account and a repo copy the link and then 
+git remote add origin url 
+ 
+**then write 
+git push -u origin main 
+after then u can only write 
+git push                               --to push your repo
+
