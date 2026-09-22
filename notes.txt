@@ -49,14 +49,30 @@ git branch -m new_name
 git switch name 
 git switch -c name    --create and switch 
 git branch -d name     --delete 
-git merge name      to merge 
 git branch -a      --see local and remote 
 git push origin --delete name   --delete remote branch 
+
+git merge name     to merge 
+git merge --abort    aborts the merge
+git merge name -m "message"         --merge with a message
 
 
 
 ///stash temp stores works making working tree clean for new commits
 git stash 
-git stash push -m "wip on search feature"    ---stash with a message
+git stash push -m "wip on search feature"           ---stash with a message
 git stash list   
-git stash pop
+git stash pop                       --applies but pop the stash 
+git stash apply                      --applies changes and keeps in the list 
+git stash apply stash_id              --apply specific stash
+git stash clear                       --clears all stash
+git stash drop stash_id                --delete specific stash
+
+
+
+////git Tags            -annotated    -lightweight
+git tag 
+git tag -a tag_name -m "message" commit_id          -annotated
+git tag tag_name commit id                          -specific light weight 
+git tag -d tag_name                         -delete a tag
+git push origin --delete tag_name               -remote 
